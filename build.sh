@@ -3,5 +3,5 @@ apt install -y libx11-dev libxft-dev libxext-dev libharfbuzz-dev zip git gcc mak
 git clone --depth=1 https://github.com/instantOS/st-instantos
 cd st-instantos
 make
-make PREFIX="./stpkg" install
+make DESTDIR="./stpkg" install
 zip -r stpkg.zip stpkg
