@@ -22,7 +22,7 @@ jobs:
 
     - name:  install dependecies
       run: |
-       bash install.sh
+       bash build.sh
        upload=$(realpath st-instantos/stpkg.zip)
        echo "FILE1=${upload}" >> $GITHUB_ENV 
 
