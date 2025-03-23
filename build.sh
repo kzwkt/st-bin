@@ -1,7 +1,5 @@
 apt update -y
-apt install -y libx11-dev libxft-dev libxext-dev libharfbuzz-dev zip git gcc make 
+apt install -y libx11-dev libxft-dev libxext-dev libharfbuzz-dev zip git gcc make ca-certificates --no-install-recommends
 git clone --depth=1 https://github.com/kzwkt/st-instantos
 cd st-instantos
 make
-make DESTDIR="./stpkg" install
-zip -r stpkg.zip stpkg
